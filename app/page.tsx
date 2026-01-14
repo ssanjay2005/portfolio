@@ -53,16 +53,17 @@ export default function Home() {
 
      
       <div className="mt-24">
-        <div
-          className="
-            w-[500px] h-[500px]
-            rounded-full
-            overflow-hidden
-            border border-[#D6C1A3]/40
-            bg-[#0B0B0B]
-            flex items-center justify-center
-          "
-        >
+       <div
+  className="
+    w-[260px] h-[260px] sm:w-[320px] sm:h-[320px]
+    md:w-[420px] md:h-[420px]
+    rounded-full
+    overflow-hidden
+    border border-[#D6C1A3]/40
+    flex items-center justify-center
+  "
+>
+
           <Image
             src="/weblogo.png"
             alt="Sanjay Logo"
@@ -76,28 +77,31 @@ export default function Home() {
 
     
       <h1
-        className={`
-          ${playfair.className}
-          mt-8
-          text-[#E6D8C3]
-          text-[clamp(3rem,7vw,6.5rem)]
-          leading-[1.05]
-          font-normal
-        `}
-      >
+  className={`
+    ${playfair.className}
+    mt-6
+    text-[#E6D8C3]
+    text-4xl
+    sm:text-5xl
+    md:text-[clamp(3rem,7vw,6.5rem)]
+    leading-tight
+  `}
+>
+
         Web Designer <br />
         <span className="italic">&amp; Developer</span>
       </h1>
 
-      <p
-        className={`
-          ${inter.className}
-          mt-4
-          text-[#A89274]
-          text-lg
-          max-w-xl
-        `}
-      >
+     <p
+  className={`
+    ${inter.className}
+    mt-4
+    text-[#A89274]
+    text-base sm:text-lg
+    max-w-sm sm:max-w-md md:max-w-xl
+  `}
+>
+
         Premium Web Design, Development, and SEO services
         to help your business stand out.
       </p>
@@ -116,8 +120,8 @@ export default function Home() {
             key={service.id}
             className="
               relative
-              p-10
-              min-h-[360px]
+            p-6 md:p-10
+  min-h-[280px] md:min-h-[360px]
               bg-gradient-to-b from-[#141414] to-[#0B0B0B]
               border border-[#2A2A2A]
               rounded-xl
@@ -195,7 +199,7 @@ export default function Home() {
                 className="
                   object-cover
                   w-full
-                  h-[420px]
+                    h-[260px] sm:h-[320px] md:h-[420px]
                   transition-transform duration-700
                   group-hover:scale-105
                 "

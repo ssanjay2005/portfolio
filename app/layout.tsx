@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { FaInstagram, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import Navbar from "@/components/Navbar";
+import { MobileNav } from "@/components/MobileNav";
 
 
 const geistSans = Geist({
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <MobileNav/>
       <Navbar />
 
         {children}
